@@ -16,12 +16,15 @@
                 display: inline-block
                 vertical-align: middle
     &-bottom
+        & .container
+            display: flex
         &__logo
             font-weight: bold
             font-size: 41px
             &-left
                 color: $blue
-            &                    
+            &-right
+                color: $green                    
 .menu
     &-list
         margin: 0
@@ -36,4 +39,36 @@
                 margin: 0 15px 0 0
         &__link
             font-size: 14px
-            color: $menu-text            
+            color: $menu-text
+.search
+    &-block
+        &-title
+            display: flex
+            margin-bottom: 10px
+            & svg
+                color: $blue
+            &__text
+                color: $blue
+                margin: 0 0 0 8px
+                font-size: 16px
+    &-form
+        max-width: 270px
+        position: relative
+        &__input
+            border: 1px solid $border
+            border-radius: 2px
+            height: 36px
+            padding: 0 36px 0 10px
+        & input::placeholder
+            color: $search-text    
+        &__button
+            border: none
+            border-radius: 0 2px 2px 0
+            background-color: $blue
+            position: absolute
+            right: 0
+            top: 0
+            height: 36px
+            width: 36px
+            & svg
+                color: $white                                                
