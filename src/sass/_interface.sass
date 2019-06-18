@@ -34,7 +34,37 @@ input
     background-color: $viber 
     & svg
         color: $white 
-                                    
+.burger
+    position: absolute
+    z-index: 20
+    top: -11px
+    right: -160px
+    width: 30px
+    height: 24px
+    cursor: pointer
+.top-line
+    top: 2px
+.center-line
+    top: 9px
+.bottom-line
+    top: 16px    
+.bottom-line, 
+.center-line, 
+.top-line
+    background-color: #3e3e3e
+    height: 2px
+    width: 100%
+    position: absolute
+    border-radius: 6px
+    transition: .3s
+.burger-open .top-line
+    transform: rotate(45deg)
+    top: 10px
+.burger-open .center-line
+    opacity: 0
+.burger-open .bottom-line
+    transform: rotate(-45deg)
+    top: 10px                                                        
 // font-family: 'Proxima Nova'
 // font-family: 'Rubik'
 // font-family: 'Gotham Pro'
