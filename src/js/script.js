@@ -9,5 +9,15 @@ $(document).ready(function () {
             $('.burger').removeClass('burger-open');
         }
     });
+
+    $('.navbar__text, .nav-icon-1').click(function () {
+        if ($('.navbar-list').css('display') == 'none') {
+            $('.navbar-list').slideDown();
+            $('.icon').addClass('open');
+        } else {
+            $('.navbar-list').slideUp();
+            $('.icon').removeClass('open');
+        }
+    });
     
 });

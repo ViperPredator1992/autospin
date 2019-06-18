@@ -66,6 +66,8 @@
                 &:nth-child(2)
                     padding: 50px 15px 15px                    
     .navbar
+        & .container
+            position: relative
         &-list
             &__item
                 &:nth-child(1)
@@ -80,4 +82,42 @@
                 &:nth-child(4)
                     &::after
                         right: 10px
-@media (max-width: 1045px)                        
+@media (max-width: 1045px) 
+    .nav-icon-1
+        display: block
+    .navbar
+        &__text
+            display: flex
+            position: relative
+            &::after
+                content: ''
+                background: url(../img/ar-down.png) no-repeat
+                width: 11px
+                height: 7px
+                position: absolute
+                right: 0
+        &-list
+            display: none
+            &__item      
+                width: 100%
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4)
+                    &::after
+                        display: none
+            &__link
+                width: 100%
+@media (max-width: 900px)
+    .buttons
+        &-top
+            position: absolute
+            top: 12px
+            right: 55px
+        &-bottom
+            display: none    
+    .header
+        &-top
+            &__email,
+            &__account
+                display: none                                                                 
