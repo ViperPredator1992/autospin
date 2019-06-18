@@ -88,6 +88,8 @@
         position: absolute
         top: 23px
         left: 0
+        z-index: 20
+        background-color: $white
         margin: 0
         padding: 8px 8px 13px 13px
         list-style: none
@@ -222,16 +224,35 @@
         flex-wrap: wrap
         align-items: center
         justify-content: space-between
-        min-height: 54px
         padding: 0
         margin: 0
         list-style-type: none
         &__item
+            position: relative
             width: 25%
+            display: flex
+            justify-content: center
+            transition: .4s
+            &:hover
+                background-color: $green
+            &:nth-child(1)
+                &::after
+                    content: url(../img/gps.png)
+                    margin: 15px 0 0 15px
+            &:nth-child(2)
+                &::after
+                    content: url(../img/noun.png)
+                    margin: 15px 0 0 15px
+            &:nth-child(3)
+                &::after
+                    content: url(../img/tractor.png)
+                    margin: 15px 0 0 15px
+            &:nth-child(4)
+                &::after
+                    content: url(../img/cum.png)
+                    margin: 15px 0 0 15px
         &__link
             color: $white
             text-transform: uppercase
-            transition: .4s
             text-align: center
-            &:hover
-                background-color: $green       
+            padding: 18px 0       
