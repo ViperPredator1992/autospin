@@ -13,14 +13,25 @@
     .header
         &-top
             position: relative
+            & .container
+                justify-content: center
+            &__account
+                margin-left: 50px
+        &-bottom
+            &__logo
+                position: absolute
+                top: 0
+                left: 15px
+                font-size: 24px            
+    .burger
+        display: block                    
     .menu
-        position: relative
         &-list
             display: none
             flex-direction: column
             position: absolute
-            top: -16px
-            left: -16px
+            top: 0
+            right: 0
             background-color: rgba(255,255,255, .9)
             z-index: 10
             width: 190px 
@@ -30,4 +41,4 @@
                 &:first-child
                     display: none
                 &:nth-child(2)
-                    padding: 50px 15px 15px                                                  
+                    padding: 50px 15px 15px
