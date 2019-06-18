@@ -84,8 +84,14 @@
         padding: 8px 8px 13px 13px
         list-style: none
         width: 180px
+        max-height: 32px
+        overflow: hidden
         border-radius: 3px
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75)
+        box-shadow: none
+        transition: .5s
+        &:hover
+            max-height: none
+            box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75)
         &__item
             margin-bottom: 10px
             position: relative
@@ -139,7 +145,21 @@
                     border-bottom: 1px solid $contact
                     text-transform: uppercase
                     position: relative
-                    right: 20px               
+                    right: 20px
+            &:nth-child(8)
+                &::before
+                    content: url(../img/clock.png) 
+                    margin-right: 8px
+                    vertical-align: middle  
+            &:nth-child(8),
+            &:nth-child(9),
+            &:nth-child(10)
+                color: $search-text
+                font-size: 13px
+                text-align: right
+                position: relative
+                right: 20px
+                                          
         &__link
             color: $phone-list
             margin: 0 0 3px 25px

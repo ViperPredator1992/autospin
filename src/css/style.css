@@ -625,7 +625,18 @@ input {
   padding: 8px 8px 13px 13px;
   list-style: none;
   width: 180px;
+  max-height: 32px;
+  overflow: hidden;
   border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.phones-list-block:hover {
+  max-height: none;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
@@ -689,6 +700,20 @@ input {
   padding-bottom: 10px;
   border-bottom: 1px solid #e1e1e1;
   text-transform: uppercase;
+  position: relative;
+  right: 20px;
+}
+
+.phones-list-block__item:nth-child(8)::before {
+  content: url(../img/clock.png);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.phones-list-block__item:nth-child(8), .phones-list-block__item:nth-child(9), .phones-list-block__item:nth-child(10) {
+  color: #7d7d7d;
+  font-size: 13px;
+  text-align: right;
   position: relative;
   right: 20px;
 }
