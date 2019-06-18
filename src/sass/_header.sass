@@ -18,6 +18,8 @@
     &-bottom
         & .container
             display: flex
+            flex-wrap: wrap
+            justify-content: space-between
         &__logo
             font-weight: bold
             font-size: 41px
@@ -71,4 +73,37 @@
             height: 36px
             width: 36px
             & svg
-                color: $white                                                
+                color: $white
+.phones-list
+    &__title
+        color: $search-text 
+        display: block
+        margin-bottom: 12px
+    &-block
+        margin: 0
+        padding: 8px 8px 13px 13px
+        list-style: none
+        max-width: 170px
+        width: 100%
+        &__item
+            margin-bottom: 10px
+            position: relative
+            &:first-child
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 5px
+                    right: -18px
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    border-width: 6px 6px 0 6px
+                    border-color: $black transparent transparent transparent
+                &::before
+                    content: url(../img/phone.png)
+        &__link
+            color: $phone-list
+            margin-bottom: 3px
+        &__city
+            font-size: 13px
+            color: $phone-city                                                                       
