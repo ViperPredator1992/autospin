@@ -617,15 +617,17 @@ input {
 .phones-list__title {
   color: #7d7d7d;
   display: block;
-  margin-bottom: 12px;
+  margin: 0 0 12px 10px;
 }
 
 .phones-list-block {
   margin: 0;
   padding: 8px 8px 13px 13px;
   list-style: none;
-  max-width: 170px;
-  width: 100%;
+  width: 180px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
 .phones-list-block__item {
@@ -637,7 +639,7 @@ input {
   content: '';
   position: absolute;
   top: 5px;
-  right: -18px;
+  right: 0;
   width: 0;
   height: 0;
   border-style: solid;
@@ -647,15 +649,58 @@ input {
 
 .phones-list-block__item:first-child::before {
   content: url(../img/phone.png);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.phones-list-block__item:nth-child(2)::before, .phones-list-block__item:nth-child(3)::before {
+  content: url(../img/phone.png);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.phones-list-block__item:nth-child(4)::before {
+  content: url(../img/vodafone.png);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.phones-list-block__item:nth-child(5)::before {
+  content: url(../img/kyivstar.png);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.phones-list-block__item:nth-child(6)::before {
+  content: url(../img/lifecell.png);
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.phones-list-block__item:nth-child(7) .phones-list-block__link {
+  color: #0054a9;
+  font-size: 14px;
+  text-align: right;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  text-transform: uppercase;
+  position: relative;
+  right: 20px;
 }
 
 .phones-list-block__link {
   color: #404040;
-  margin-bottom: 3px;
+  margin: 0 0 3px 25px;
 }
 
 .phones-list-block__city {
   font-size: 13px;
   color: #929292;
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */
