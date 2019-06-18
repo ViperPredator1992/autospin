@@ -1,0 +1,39 @@
+.header
+    &-top
+        background-color: $top-bg
+        & .container
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: space-between
+        &__account
+            text-transform: uppercase
+            font-size: 14px
+            color: $account
+            &::before
+                content: url(../img/account.png)
+                margin-right: 8px
+                display: inline-block
+                vertical-align: middle
+    &-bottom
+        &__logo
+            font-weight: bold
+            font-size: 41px
+            &-left
+                color: $blue
+            &                    
+.menu
+    &-list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        align-items: center
+        min-height: 28px
+        &__item
+            margin: 0 15px
+            &:first-child
+                margin: 0 15px 0 0
+        &__link
+            font-size: 14px
+            color: $menu-text            
