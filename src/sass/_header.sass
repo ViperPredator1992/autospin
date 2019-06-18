@@ -214,4 +214,24 @@
         align-items: center
         justify-content: center
         background-color: $callback
-        border-radius: 3px           
+        border-radius: 3px
+.navbar
+    background-color: $blue
+    &-list
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        min-height: 54px
+        padding: 0
+        margin: 0
+        list-style-type: none
+        &__item
+            width: 25%
+        &__link
+            color: $white
+            text-transform: uppercase
+            transition: .4s
+            text-align: center
+            &:hover
+                background-color: $green       

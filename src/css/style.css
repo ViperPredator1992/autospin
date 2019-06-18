@@ -833,4 +833,43 @@ input {
   background-color: #21b063;
   border-radius: 3px;
 }
+
+.navbar {
+  background-color: #0054a9;
+}
+
+.navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 54px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar-list__item {
+  width: 25%;
+}
+
+.navbar-list__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  text-align: center;
+}
+
+.navbar-list__link:hover {
+  background-color: #21b264;
+}
 /*# sourceMappingURL=style.css.map */
