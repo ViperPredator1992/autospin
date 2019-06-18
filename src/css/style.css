@@ -635,6 +635,11 @@ input {
   color: #ffffff;
 }
 
+.phones-list {
+  position: relative;
+  width: 180px;
+}
+
 .phones-list__title {
   color: #7d7d7d;
   display: block;
@@ -642,6 +647,9 @@ input {
 }
 
 .phones-list-block {
+  position: absolute;
+  top: 23px;
+  left: 0;
   margin: 0;
   padding: 8px 8px 13px 13px;
   list-style: none;
