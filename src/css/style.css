@@ -493,7 +493,7 @@ input {
   display: none;
   position: absolute;
   z-index: 20;
-  top: 5px;
+  top: 15px;
   right: 15px;
   width: 30px;
   height: 24px;
@@ -903,7 +903,6 @@ input {
 }
 
 .navbar-list__item {
-  position: relative;
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,6 +910,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
@@ -923,28 +923,41 @@ input {
 .navbar-list__item:nth-child(1)::after {
   content: url(../img/gps.png);
   margin: 15px 0 0 15px;
+  position: absolute;
+  top: 0;
+  right: 40px;
 }
 
 .navbar-list__item:nth-child(2)::after {
   content: url(../img/noun.png);
   margin: 15px 0 0 15px;
+  position: absolute;
+  top: 0;
+  right: 28px;
 }
 
 .navbar-list__item:nth-child(3)::after {
   content: url(../img/tractor.png);
   margin: 15px 0 0 15px;
+  position: absolute;
+  top: 0;
+  right: 40px;
 }
 
 .navbar-list__item:nth-child(4)::after {
   content: url(../img/cum.png);
   margin: 15px 0 0 15px;
+  position: absolute;
+  top: 0;
+  right: 28px;
 }
 
 .navbar-list__link {
+  position: relative;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  padding: 18px 0;
+  padding: 18px 45px;
 }
 
 @media (max-width: 1170px) {
@@ -953,6 +966,18 @@ input {
   }
   .menu-list__item:first-child {
     margin: 0 8px 0 0;
+  }
+  .navbar-list__item:nth-child(1)::after {
+    right: 30px;
+  }
+  .navbar-list__item:nth-child(2)::after {
+    right: 20px;
+  }
+  .navbar-list__item:nth-child(3)::after {
+    right: 30px;
+  }
+  .navbar-list__item:nth-child(4)::after {
+    right: 20px;
   }
 }
 
@@ -964,17 +989,18 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    min-height: 50px;
   }
   .header-top__account {
     margin-left: 50px;
   }
   .header-bottom__logo {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 15px;
   }
   .header-bottom__logo img {
-    width: 200px;
+    width: 190px;
   }
   .burger {
     display: block;
@@ -1001,6 +1027,18 @@ input {
   }
   .menu-list__item:nth-child(2) {
     padding: 50px 15px 15px;
+  }
+  .navbar-list__item:nth-child(1)::after {
+    right: 20px;
+  }
+  .navbar-list__item:nth-child(2)::after {
+    right: 10px;
+  }
+  .navbar-list__item:nth-child(3)::after {
+    right: 20px;
+  }
+  .navbar-list__item:nth-child(4)::after {
+    right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
