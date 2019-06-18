@@ -5,10 +5,10 @@
                 margin: 0 8px
                 &:first-child
                     margin: 0 8px 0 0
-    .header
-        &-bottom
-            &__logo
-                font-size: 34px
+    // .header
+    //     &-bottom
+    //         &__logo
+    //             font-size: 34px
 @media (max-width: 1090px)
     .header
         &-top
@@ -17,12 +17,20 @@
                 justify-content: center
             &__account
                 margin-left: 50px
+        // &-bottom
+        //     &__logo
+        //         position: absolute
+        //         top: 0
+        //         left: 15px
+        //         font-size: 24px 
         &-bottom
             &__logo
                 position: absolute
                 top: 0
                 left: 15px
-                font-size: 24px            
+                & img
+                    width: 200px
+
     .burger
         display: block                    
     .menu

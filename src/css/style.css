@@ -590,17 +590,8 @@ input {
   min-height: 86px;
 }
 
-.header-bottom__logo {
-  font-weight: bold;
-  font-size: 41px;
-}
-
-.header-bottom__logo-left {
-  color: #0054a9;
-}
-
-.header-bottom__logo-right {
-  color: #21b264;
+.header-bottom__logo img {
+  width: 250px;
 }
 
 .menu-list {
@@ -963,9 +954,6 @@ input {
   .menu-list__item:first-child {
     margin: 0 8px 0 0;
   }
-  .header-bottom__logo {
-    font-size: 34px;
-  }
 }
 
 @media (max-width: 1090px) {
@@ -984,7 +972,9 @@ input {
     position: absolute;
     top: 0;
     left: 15px;
-    font-size: 24px;
+  }
+  .header-bottom__logo img {
+    width: 200px;
   }
   .burger {
     display: block;
