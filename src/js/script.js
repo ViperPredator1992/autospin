@@ -35,26 +35,5 @@ $(document).ready(function () {
         items: 1,
         dots: true
     });
-
-    $('.portfolio-works').isotope({
-        itemSelector: '.port-block'
-    });
-
-    $('.info-filter__link').click(function () {
-
-        $('.info-filter__link').removeClass('active-tag');
-        $(this).addClass('active-tag');
-        var selector = $(this).attr('data-filter');
-
-        $('.portfolio-works').isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 1000,
-                easing: 'easeOutQuart',
-                queue: false
-            }
-        });
-        return false;
-    });
     
 });

@@ -42,6 +42,12 @@
     //     &-bottom
     //         &__logo
     //             font-size: 34px
+@media (max-width: 1150px)
+    .info
+        &-block
+            &s
+                max-width: 650px
+                margin: auto    
 @media (max-width: 1100px)
     .solution
         &-block
@@ -235,7 +241,16 @@
         &-block
             width: 48%
             &s
-                justify-content: space-between                                
+                justify-content: space-between
+    .info
+        &-filter
+            max-width: 340px
+            margin: 0 auto 30px
+            &__link
+                margin: 0 4px 5px
+        &-block
+            &s
+                flex-direction: column                                                
 @media (max-width: 500px)
     .header
         &-top 
@@ -284,7 +299,9 @@
     .right-block
         display: none
     .owl-dots
-        bottom: 5px                                    
+        bottom: 5px
+    .info
+        padding: 35px 0                                        
 @media (max-width: 400px)
     .header
         &-bottom
