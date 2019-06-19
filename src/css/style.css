@@ -661,6 +661,14 @@ input {
   bottom: 4px;
 }
 
+.section-title {
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2a2c31;
+  font-weight: 900;
+}
+
 .header-top {
   background-color: #f5f5f5;
 }
@@ -1386,6 +1394,44 @@ input {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.section-about {
+  padding-top: 72px;
+}
+
+.about-block:first-child {
+  max-width: 660px;
+}
+
+.about-block__title {
+  margin: 0 0 30px;
+}
+
+.about-block__subtitle {
+  font-size: 30px;
+  color: #0054a9;
+  line-height: 36px;
+  margin-bottom: 30px;
+  display: block;
+  max-width: 580px;
+}
+
+.about-block__text {
+  color: #505050;
+  line-height: 24px;
+  margin: 0 0 56px;
+}
+
+.about-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1170px) {
