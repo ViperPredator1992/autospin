@@ -1,3 +1,12 @@
+@media (max-width: 1180px)
+    .about
+        &-block
+            &:first-child
+                max-width: 560px
+            &__subtitle
+                max-width: none
+                font-size: 24px
+                line-height: 30px    
 @media (max-width: 1170px)
     .menu
         &-list
@@ -82,6 +91,21 @@
                 &:nth-child(4)
                     &::after
                         right: 10px
+    .section-about
+        padding-top: 40px                        
+    .about
+        &-block
+            &:first-child
+                max-width: none
+            &__title
+                margin: 0 0 15px
+            &__subtitle
+                margin: 0 0 15px
+            &__text
+                margin: 0 0 30px
+            &s
+                flex-direction: column
+                align-items: center                                         
 @media (max-width: 1045px) 
     .nav-icon-1
         display: block
@@ -165,6 +189,16 @@
                     margin-right: 5px                    
     .burger
         top: 10px
+@media (max-width: 425px)
+    .about
+        &-block
+            &__title
+                font-size: 20px
+            &__subtitle
+                font-size: 18px
+                line-height: normal
+            &__text
+                font-size: 14px                
 @media (max-width: 400px)
     .header
         &-bottom
@@ -204,10 +238,11 @@
         top: 20px
     .phones-list
         &-block
-            max-height: 30px
-            width: 152px
+            max-height: 28px
+            width: 145px
             &__link
-                font-size: 14px
+                font-size: 13px
+                margin: 0 0 3px 22px
             &__item
                 &:first-child
                     &::before

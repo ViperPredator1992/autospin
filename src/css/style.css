@@ -1434,6 +1434,17 @@ input {
           justify-content: space-between;
 }
 
+@media (max-width: 1180px) {
+  .about-block:first-child {
+    max-width: 560px;
+  }
+  .about-block__subtitle {
+    max-width: none;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 @media (max-width: 1170px) {
   .menu-list__item {
     margin: 0 8px;
@@ -1516,6 +1527,30 @@ input {
   }
   .navbar-list__item:nth-child(4)::after {
     right: 10px;
+  }
+  .section-about {
+    padding-top: 40px;
+  }
+  .about-block:first-child {
+    max-width: none;
+  }
+  .about-block__title {
+    margin: 0 0 15px;
+  }
+  .about-block__subtitle {
+    margin: 0 0 15px;
+  }
+  .about-block__text {
+    margin: 0 0 30px;
+  }
+  .about-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1621,6 +1656,19 @@ input {
   }
 }
 
+@media (max-width: 425px) {
+  .about-block__title {
+    font-size: 20px;
+  }
+  .about-block__subtitle {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .about-block__text {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 400px) {
   .header-bottom .container {
     padding: 0;
@@ -1669,11 +1717,12 @@ input {
     top: 20px;
   }
   .phones-list-block {
-    max-height: 30px;
-    width: 152px;
+    max-height: 28px;
+    width: 145px;
   }
   .phones-list-block__link {
-    font-size: 14px;
+    font-size: 13px;
+    margin: 0 0 3px 22px;
   }
   .phones-list-block__item:first-child::before {
     top: 0;
