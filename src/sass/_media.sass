@@ -1,3 +1,7 @@
+@media (max-width: 1200px)
+    .solution
+        &-block
+            max-width: 340px
 @media (max-width: 1180px)
     .about
         &-block
@@ -33,6 +37,12 @@
     //     &-bottom
     //         &__logo
     //             font-size: 34px
+@media (max-width: 1100px)
+    .solution
+        &-block
+            &s
+                max-width: 800px
+                margin: auto    
 @media (max-width: 1090px)
     .header
         &-top
@@ -165,10 +175,20 @@
         top: -10px
     .numbers
         &-block
-            width: 50%    
+            width: 50% 
+    .solution
+        padding: 35px 0
+        &__title
+            margin: 0 0 25px           
 @media (max-width: 768px)
     .owl-dots
         bottom: 10px
+    .solution
+        &-block
+            &__title
+                font-size: 14px
+            &s
+                flex-direction: column    
 @media (max-width: 680px)
     .numbers__lines
         & .line
