@@ -76,6 +76,14 @@
     border-top: 2px solid #dadada
     padding-top: 50px
     &-block
+        &:nth-child(2)
+            .footer
+                &-list
+                    &__link
+                        position: relative
+                        &::before
+                            content: url(../img/ar-right.png)
+                            margin-right: 5px
         &__title
             color: $blue
             text-transform: uppercase

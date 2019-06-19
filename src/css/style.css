@@ -1858,6 +1858,15 @@ input {
   padding-top: 50px;
 }
 
+.footer-block:nth-child(2) .footer-list__link {
+  position: relative;
+}
+
+.footer-block:nth-child(2) .footer-list__link::before {
+  content: url(../img/ar-right.png);
+  margin-right: 5px;
+}
+
 .footer-block__title {
   color: #0054a9;
   text-transform: uppercase;
