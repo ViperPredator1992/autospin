@@ -1866,6 +1866,51 @@ input {
   font-size: 16px;
 }
 
+.footer-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-list__item {
+  margin-bottom: 10px;
+}
+
+.footer-list__link {
+  color: #505050;
+}
+
+.footer-copy {
+  border-top: 2px solid #dadada;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+}
+
+.footer-copy__email {
+  font-size: 14px;
+  color: #666666;
+}
+
 @media (max-width: 1200px) {
   .solution-block {
     max-width: 340px;
