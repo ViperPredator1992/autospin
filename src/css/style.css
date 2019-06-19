@@ -1853,6 +1853,19 @@ input {
   cursor: pointer;
 }
 
+.footer {
+  border-top: 2px solid #dadada;
+  padding-top: 50px;
+}
+
+.footer-block__title {
+  color: #0054a9;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
 @media (max-width: 1200px) {
   .solution-block {
     max-width: 340px;
