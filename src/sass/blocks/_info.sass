@@ -6,8 +6,37 @@
     &-filter
         display: flex
         justify-content: center
+        margin-bottom: 30px
         &__link
             font-size: 12px
             text-transform: uppercase
             color: $info
             margin: 0 4px
+            &:hover,
+            &.active-tag
+                color: $green
+    &-block
+        max-width: 270px
+        width: 100%
+        &__image
+            & img
+                display: block
+                margin: auto
+        &__title
+            margin: 15px 0
+            font-weight: 600
+            font-size: 18px
+            color: $number
+            &:hover
+                color: $blue
+        &__text
+            line-height: 24px
+            color: $about
+            margin: 0 0 30px
+            height: 100px
+            overflow: hidden
+        &s
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between          

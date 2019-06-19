@@ -34,6 +34,27 @@ $(document).ready(function () {
         nav: false,
         items: 1,
         dots: true
-    })
+    });
+
+    $('.portfolio-works').isotope({
+        itemSelector: '.port-block'
+    });
+
+    $('.info-filter__link').click(function () {
+
+        $('.filter a').removeClass('active-tag');
+        $(this).addClass('active-tag');
+        var selector = $(this).attr('data-filter');
+
+        $('.portfolio-works').isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 1000,
+                easing: 'easeOutQuart',
+                queue: false
+            }
+        });
+        return false;
+    });
     
 });
