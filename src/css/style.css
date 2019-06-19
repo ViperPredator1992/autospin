@@ -1489,6 +1489,68 @@ input {
   border-bottom: 2px solid #0054a9;
 }
 
+.solution {
+  padding: 70px 0;
+}
+
+.solution__title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.solution-block {
+  max-width: 370px;
+  width: 100%;
+}
+
+.solution-block__image img {
+  margin: auto;
+  display: block;
+}
+
+.solution-block__title {
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: bold;
+  color: #2a2c31;
+  font-size: 18px;
+  margin: 30px 30px 20px;
+  text-transform: uppercase;
+}
+
+.solution-block__text {
+  line-height: 24px;
+  overflow: hidden;
+  height: 70px;
+  margin: 0 30px 20px;
+}
+
+.solution-block__link {
+  position: relative;
+  color: #21b264;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 500;
+  margin: 0 30px;
+}
+
+.solution-block__link::before {
+  content: url(../img/solutions/arrow.png);
+  margin-right: 17px;
+}
+
+.solution-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .right-block-list {
   padding: 0;
   margin: 0;
