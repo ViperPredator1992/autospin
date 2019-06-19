@@ -1705,6 +1705,32 @@ input {
   overflow: hidden;
 }
 
+.info-block__hach {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-block__tags {
+  color: #858585;
+  font-size: 12px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.info-block__tags:first-child {
+  color: #21b264;
+}
+
+.info-block__tags:first-child:hover {
+  color: #858585;
+}
+
+.info-block__tags:hover {
+  color: #21b264;
+}
+
 .info-blocks {
   display: -webkit-box;
   display: -ms-flexbox;

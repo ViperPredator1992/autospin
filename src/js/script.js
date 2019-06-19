@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     $('.info-filter__link').click(function () {
 
-        $('.filter a').removeClass('active-tag');
+        $('.info-filter__link').removeClass('active-tag');
         $(this).addClass('active-tag');
         var selector = $(this).attr('data-filter');
 
