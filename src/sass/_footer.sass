@@ -1,21 +1,35 @@
 .right-block
-    position: fixed
-    top: 50%
-    right: 0
-    transform: translateY(-50%)
-    max-width: 285px
-    width: 100%
-    z-index: 30
+    // position: fixed
+    // top: 50%
+    // right: -235px
+    // transform: translateY(-50%)
+    // max-width: 285px
+    // width: 100%
+    // z-index: 30
     &-list
         padding: 0
         margin: 0
         list-style: none
+        // position: fixed
+        // top: 50%
+        // right: 0
+        // transform: translateY(-50%)
+        // max-width: 285px
+        // width: 100%
+        // z-index: 30
         &__item
             height: 50px
-            margin-bottom: 15px
             border-radius: 30px 0 0 30px
+            position: fixed
+            right: -235px
+            max-width: 285px
+            width: 100%
+            z-index: 30
+            transition: .5s
             &:first-child
                 background-color: $green
+                top: 42%
+                transform: translateY(-42%)
                 & .right-block-list__link
                     &::before
                         content: ''
@@ -26,12 +40,16 @@
                         position: absolute
             &:nth-child(2)
                 background-color: $blue
+                top: 50%
+                transform: translateY(-50%)
                 & .right-block-list__link
                     &::before
                         content: url(../img/pdf.png)
                         padding-right: 10px
             &:last-child
                 background-color: $blue2
+                top: 58%
+                transform: translateY(-58%)
                 & .right-block-list__link
                     &::before
                         content: ''
@@ -39,8 +57,10 @@
                         width: 31px
                         height: 23px
                         position: absolute
-                        top: 5px
-                        padding-right: 10px  
+                        top: 15px
+                        padding-right: 10px
+            &:hover
+                right: 0              
         &__link
             color: $white
             padding-top: 8px
@@ -53,4 +73,4 @@
             margin-left: 40px 
         &__center
             position: relative
-            top: -8px                       
+            top: -8px                                            
