@@ -1362,6 +1362,32 @@ input {
   width: 100%;
 }
 
+.banner-carousel {
+  max-height: 500px;
+}
+
+.banner-carousel button.owl-dot {
+  background: #ffffff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 4px;
+  border: 2px solid #ffffff;
+}
+
+.banner-carousel button.owl-dot.active {
+  background: transparent;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 @media (max-width: 1170px) {
   .menu-list__item {
     margin: 0 8px;
