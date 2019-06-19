@@ -1646,6 +1646,15 @@ input {
           filter: grayscale(0%);
 }
 
+.info {
+  padding: 60px 0;
+}
+
+.info__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
 .right-block-list {
   padding: 0;
   margin: 0;
@@ -1991,6 +2000,9 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .partners__title {
+    margin: 0 auto 30px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -2060,7 +2072,11 @@ input {
     top: 10px;
   }
   .partners-block {
-    max-width: 420px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 320px;
   }
 }
 
