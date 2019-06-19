@@ -492,7 +492,7 @@ input {
 .burger {
   display: none;
   position: absolute;
-  z-index: 20;
+  z-index: 30;
   top: 15px;
   right: 15px;
   width: 30px;
@@ -691,6 +691,10 @@ input {
   margin-right: 8px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.header-top__search {
+  display: none;
 }
 
 .header-bottom .container {
@@ -1147,7 +1151,7 @@ input {
     top: 0;
     right: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10;
+    z-index: 25;
     width: 190px;
   }
   .menu-list__item {
@@ -1220,6 +1224,62 @@ input {
   }
   .header-top__email, .header-top__account {
     display: none;
+  }
+  .header-top__search {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 230px;
+  }
+  .header-top__search svg {
+    color: #0054a9;
+  }
+  .header-bottom .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .search-block {
+    display: none;
+  }
+  .phones-list {
+    margin: 0 10px;
+    top: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-top .container {
+    min-height: 44px;
+  }
+  .header-top__search {
+    top: 10px;
+    right: 165px;
+  }
+  .header-bottom .container {
+    min-height: 68px;
+  }
+  .header-bottom__logo img {
+    width: 150px;
+  }
+  .buttons-top {
+    top: 2px;
+  }
+  .buttons-top-lang-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 0 5px;
+  }
+  .buttons-top-lang-list__item:first-child {
+    margin-bottom: 2px;
+  }
+  .buttons-top-social__item {
+    margin-right: 5px;
+  }
+  .burger {
+    top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
