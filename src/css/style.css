@@ -1655,10 +1655,20 @@ input {
   text-align: center;
 }
 
+.info-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .info-filter__link {
   font-size: 12px;
   text-transform: uppercase;
   color: #858585;
+  margin: 0 4px;
 }
 
 .right-block-list {
