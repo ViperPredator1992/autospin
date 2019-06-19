@@ -1,17 +1,56 @@
 .right-block
     position: fixed
-    top: 0
+    top: 50%
     right: 0
+    transform: translateY(-50%)
+    max-width: 285px
+    width: 100%
+    z-index: 30
     &-list
         padding: 0
         margin: 0
         list-style: none
         &__item
-            max-width: 285px
-            width: 100%
+            height: 50px
+            margin-bottom: 15px
+            border-radius: 30px 0 0 30px
             &:first-child
                 background-color: $green
+                & .right-block-list__link
+                    &::before
+                        content: ''
+                        background: url(../img/document.png)
+                        padding-right: 10px
+                        width: 29px
+                        height: 29px
+                        position: absolute
             &:nth-child(2)
                 background-color: $blue
+                & .right-block-list__link
+                    &::before
+                        content: url(../img/pdf.png)
+                        padding-right: 10px
             &:last-child
-                        
+                background-color: $blue2
+                & .right-block-list__link
+                    &::before
+                        content: ''
+                        background: url(../img/car.png)
+                        width: 31px
+                        height: 23px
+                        position: absolute
+                        top: 5px
+                        padding-right: 10px  
+        &__link
+            color: $white
+            padding-top: 8px
+            margin-left: 15px
+            position: relative
+        &__top
+            text-transform: uppercase
+            margin-left: 40px
+        &__bottom
+            margin-left: 40px 
+        &__center
+            position: relative
+            top: -8px                       
