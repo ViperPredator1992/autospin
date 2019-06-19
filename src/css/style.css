@@ -1434,6 +1434,25 @@ input {
           justify-content: space-between;
 }
 
+.numbers__title {
+  margin: 0 0 53px;
+}
+
+.numbers-block__number {
+  font-size: 48px;
+  color: #21b063;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.numbers-block__title {
+  text-transform: uppercase;
+  color: #2a2c31;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+
 .right-block-list {
   padding: 0;
   margin: 0;
@@ -1713,6 +1732,19 @@ input {
   }
 }
 
+@media (max-width: 768px) {
+  .owl-dots {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 @media (max-width: 500px) {
   .header-top .container {
     min-height: 44px;
@@ -1761,6 +1793,9 @@ input {
   }
   .right-block {
     display: none;
+  }
+  .owl-dots {
+    bottom: 5px;
   }
 }
 
@@ -1836,6 +1871,13 @@ input {
   }
   .phones-list-block__item:nth-child(6)::before {
     top: 0;
+  }
+  .owl-dots {
+    bottom: 2px;
+  }
+  .banner-carousel button.owl-dot {
+    width: 8px;
+    height: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

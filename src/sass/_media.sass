@@ -160,6 +160,15 @@
     .phones-list
         margin: 0 10px
         top: -10px
+@media (max-width: 768px)
+    .owl-dots
+        bottom: 10px
+@media (max-width: 600px)
+    .banner
+        &-carousel
+            & button.owl-dot
+                width: 10px
+                height: 10px                
 @media (max-width: 500px)
     .header
         &-top 
@@ -200,7 +209,9 @@
             &__text
                 font-size: 14px
     .right-block
-        display: none                                
+        display: none
+    .owl-dots
+        bottom: 5px                                    
 @media (max-width: 400px)
     .header
         &-bottom
@@ -263,4 +274,11 @@
                         top: 0
                 &:nth-child(6)
                     &::before
-                        top: 0                                                                                                                                                                                                                                               
+                        top: 0
+    .owl-dots
+        bottom: 2px
+    .banner
+        &-carousel
+            & button.owl-dot
+                width: 8px
+                height: 8px                                                                                                                                                                                                                                                                           
