@@ -1434,6 +1434,31 @@ input {
           justify-content: space-between;
 }
 
+.right-block {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.right-block-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.right-block-list__item {
+  max-width: 285px;
+  width: 100%;
+}
+
+.right-block-list__item:first-child {
+  background-color: #21b264;
+}
+
+.right-block-list__item:nth-child(2) {
+  background-color: #0054a9;
+}
+
 @media (max-width: 1180px) {
   .about-block:first-child {
     max-width: 560px;
