@@ -1330,6 +1330,7 @@ input {
   }
   .phones-list-block {
     max-height: 30px;
+    width: 152px;
   }
   .phones-list-block__link {
     font-size: 14px;
