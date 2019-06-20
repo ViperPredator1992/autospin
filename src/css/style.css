@@ -1890,6 +1890,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .footer-list {
@@ -1948,13 +1949,67 @@ input {
 .city-block-list__item {
   margin-right: 25px;
   margin-bottom: 10px;
+  color: #505050;
+  font-size: 18px;
 }
 
 .city-block-list__item::before {
   content: url(../img/cyti.png);
-  margin-right: 8px;
+  margin-right: 5px;
   vertical-align: middle;
   display: inline-block;
+}
+
+.phone-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.phone-list__item {
+  margin-bottom: 10px;
+}
+
+.phone-list__link {
+  color: #404040;
+}
+
+.phone-list__link::before {
+  content: url(../img/phone.png);
+  margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.footer-social {
+  margin-top: 25px;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social-list__item {
+  margin-right: 15px;
+}
+
+.footer-social-list__link {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1200px) {
@@ -2137,6 +2192,17 @@ input {
   .partners-block {
     max-width: 750px;
   }
+  .footer-block {
+    width: 33.33%;
+    margin-bottom: 25px;
+  }
+  .footer-blocks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 700px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2219,6 +2285,14 @@ input {
   }
   .partners__title {
     margin: 0 auto 30px;
+  }
+  .footer-block {
+    width: 47%;
+  }
+  .footer-blocks {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

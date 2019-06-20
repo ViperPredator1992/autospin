@@ -98,6 +98,7 @@
             display: flex
             flex-wrap: wrap
             justify-content: space-between
+            margin-bottom: 30px
     &-list
         padding: 0
         margin: 0
@@ -130,8 +131,38 @@
         &__item
             margin-right: 25px
             margin-bottom: 10px
+            color: $about
+            font-size: 18px
             &::before
                 content: url(../img/cyti.png)
-                margin-right: 8px
+                margin-right: 5px
                 vertical-align: middle
-                display: inline-block                                                                                       
+                display: inline-block
+.phone-list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    &__item
+        margin-bottom: 10px
+    &__link
+        color: $phone-list
+        &::before
+            content: url(../img/phone.png)
+            margin-right: 5px
+            vertical-align: middle
+            display: inline-block
+.footer-social
+    margin-top: 25px
+    &-list
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        &__item
+            margin-right: 15px
+        &__link
+            width: 25px
+            height: 25px
+            display: flex
+            align-items: center
+            justify-content: center                
