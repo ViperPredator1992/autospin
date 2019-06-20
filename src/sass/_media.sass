@@ -229,7 +229,9 @@
     .footer-block
         width: 47%
         &s
-            justify-content: space-between                            
+            justify-content: space-between
+    .popup
+        max-width: 500px                                        
 @media (max-width: 680px)
     .numbers__lines
         & .line
@@ -262,7 +264,22 @@
                 margin: 0 4px 5px
         &-block
             &s
-                flex-direction: column                                                
+                flex-direction: column 
+@media (max-width: 550px)
+    .popup
+        max-width: 380px
+        padding: 15px
+        &-close
+            right: 8px
+            top: -8px
+        &-block
+            &__title
+                font-size: 20px
+                margin: 20px 0 6px
+            &__subtitle
+                font-size: 14px
+                line-height: normal
+                max-width: 320px                                                                   
 @media (max-width: 500px)
     .header
         &-top 
@@ -326,7 +343,17 @@
         padding: 35px 0
     #toTop
         bottom: 70px
-        right: 15px                                  
+        right: 15px
+    .popup
+        padding: 8px
+        max-width: 95%
+        &-block
+            &__title
+                font-size: 18px
+                margin: 28px 0 6px
+            &__subtitle
+                font-size: 12px
+                max-width: 270px                                          
 @media (max-width: 400px)
     .header
         &-bottom

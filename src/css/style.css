@@ -2013,6 +2013,7 @@ input {
 }
 
 .mask {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2023,6 +2024,7 @@ input {
 }
 
 .popup {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2062,6 +2064,11 @@ input {
   max-width: 370px;
 }
 
+.popup-form {
+  max-width: 230px;
+  margin: auto;
+}
+
 .popup-form-field {
   position: relative;
 }
@@ -2072,7 +2079,6 @@ input {
   border-radius: 3px;
   padding: 0 10px 0 38px;
   height: 40px;
-  max-width: 230px;
 }
 
 .popup-form-fields {
@@ -2086,12 +2092,45 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
+}
+
+.popup-form__button {
+  color: #ffffff;
+  background-color: #21b264;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .field-one {
   background: url(../img/name.png);
   width: 12px;
   height: 14px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.field-two {
+  background: url(../img/phone2.png);
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.field-three {
+  background: url(../img/email.png);
+  width: 13px;
+  height: 11px;
   position: absolute;
   top: 14px;
   left: 14px;
@@ -2379,6 +2418,9 @@ input {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .popup {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -2424,6 +2466,26 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .popup {
+    max-width: 380px;
+    padding: 15px;
+  }
+  .popup-close {
+    right: 8px;
+    top: -8px;
+  }
+  .popup-block__title {
+    font-size: 20px;
+    margin: 20px 0 6px;
+  }
+  .popup-block__subtitle {
+    font-size: 14px;
+    line-height: normal;
+    max-width: 320px;
   }
 }
 
@@ -2515,6 +2577,18 @@ input {
   #toTop {
     bottom: 70px;
     right: 15px;
+  }
+  .popup {
+    padding: 8px;
+    max-width: 95%;
+  }
+  .popup-block__title {
+    font-size: 18px;
+    margin: 28px 0 6px;
+  }
+  .popup-block__subtitle {
+    font-size: 12px;
+    max-width: 270px;
   }
 }
 

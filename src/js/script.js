@@ -50,4 +50,12 @@ $(document).ready(function () {
         }, 1500);
     });
     
+    $('.buttons-bottom').click(function () {
+       $('.mask, .popup').fadeIn(); 
+    });
+
+    $('.mask, .popup-close').click(function () {
+       $('.mask, .popup').fadeOut(); 
+    });
+
 });
