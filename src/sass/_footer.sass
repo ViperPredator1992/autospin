@@ -90,7 +90,10 @@
             font-weight: normal
             margin: 0 0 20px
             font-size: 16px
-        
+        &__text
+            font-size: 18px
+            color: $number
+            margin: 0 0 15px
         &s
             display: flex
             flex-wrap: wrap
@@ -112,4 +115,23 @@
         height: 50px
         &__email
             font-size: 14px
-            color: #666666                                                                       
+            color: #666666
+            &::before
+                content: url(../img/email.png)
+                margin: 0 7px
+                display: inline-block
+                vertical-align: text-bottom
+.city-block
+    display: flex                
+    &-list
+        padding: 0
+        margin: 0
+        list-style-type: none
+        &__item
+            margin-right: 25px
+            margin-bottom: 10px
+            &::before
+                content: url(../img/cyti.png)
+                margin-right: 8px
+                vertical-align: middle
+                display: inline-block                                                                                       

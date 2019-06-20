@@ -1875,6 +1875,12 @@ input {
   font-size: 16px;
 }
 
+.footer-block__text {
+  font-size: 18px;
+  color: #2a2c31;
+  margin: 0 0 15px;
+}
+
 .footer-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1918,6 +1924,37 @@ input {
 .footer-copy__email {
   font-size: 14px;
   color: #666666;
+}
+
+.footer-copy__email::before {
+  content: url(../img/email.png);
+  margin: 0 7px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.city-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.city-block-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.city-block-list__item {
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.city-block-list__item::before {
+  content: url(../img/cyti.png);
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 @media (max-width: 1200px) {
