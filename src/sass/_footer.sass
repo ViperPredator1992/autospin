@@ -166,3 +166,35 @@
             display: flex
             align-items: center
             justify-content: center                
+.mask
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1005
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, .2)
+.popup
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    background-color: $white
+    z-index: 1010
+    max-width: 570px
+    width: 100% 
+    padding: 30px
+    &-close
+        position: absolute
+        top: 0
+        right: 15px
+        font-size: 50px
+        color: #7d7d7d
+        cursor: pointer
+    &-block
+        &__title
+            font-size: 30px
+            font-weight: bold
+            text-align: center
+            margin: 20px 0
+            color: $blue                  
